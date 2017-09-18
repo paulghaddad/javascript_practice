@@ -1,0 +1,19 @@
+{
+  "name": "javascript_practice",
+  "version": "1.0.0",
+  "description": "Practice exercises for mastering JavaScript",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/paulghaddad/javascript_practice.git"
+  },
+  "author": "Paul G Haddad",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/paulghaddad/javascript_practice/issues"
+  },
+  "homepage": "https://github.com/paulghaddad/javascript_practice#readme"
+}
