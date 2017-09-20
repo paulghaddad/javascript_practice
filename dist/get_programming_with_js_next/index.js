@@ -1,0 +1,4 @@
+'use strict';
+
+var foo = 'hello world';
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi4uLy4uL3NyYy9nZXRfcHJvZ3JhbW1pbmdfd2l0aF9qc19uZXh0L2luZGV4LmVzNiJdLCJuYW1lcyI6WyJmb28iXSwibWFwcGluZ3MiOiI7O0FBQUEsSUFBSUEsTUFBTSxhQUFWIiwiZmlsZSI6ImluZGV4LmpzIiwic291cmNlc0NvbnRlbnQiOlsibGV0IGZvbyA9ICdoZWxsbyB3b3JsZCc7XG4iXX0=
