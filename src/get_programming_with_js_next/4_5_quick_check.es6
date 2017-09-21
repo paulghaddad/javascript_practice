@@ -1,41 +1,41 @@
 /*
  Rewrite the following function in ES6
 
-	(function (namespace) {
+(function (namespace) {
 
-		var DEFAULT_START = 0;
-		var DEFAULT_STEP  = 1;
+  var DEFAULT_START = 0;
+  var DEFAULT_STEP  = 1;
 
-		var range = function (start, stop, step) {
-			var arr = [];
+  var range = function (start, stop, step) {
+    var arr = [];
 
-			if (!step) {
-				step = DEFAULT_STEP;
-			}
+    if (!step) {
+      step = DEFAULT_STEP;
+    }
 
-			if (!stop) {
-				stop = start;
-				start = DEFAULT_START;
-			}
+    if (!stop) {
+      stop = start;
+      start = DEFAULT_START;
+    }
 
-			if (stop < start) {
-				(function () {
-					// reverse values
-					var tmp = start;
-					start = stop;
-					stop = tmp;
-				}());
-			}
+    if (stop < start) {
+      (function () {
+        // reverse values
+        var tmp = start;
+        start = stop;
+        stop = tmp;
+      }());
+    }
 
-			(function () {
-				var i;
-				for (i = start; i < stop; i += step) {
-					arr.push(i);
-				}
-			}());
+    (function () {
+      var i;
+      for (i = start; i < stop; i += step) {
+        arr.push(i);
+      }
+    }());
 
-			return arr;
-	}
+    return arr;
+ }
 
   namespace.range = range;
 
