@@ -26,21 +26,18 @@ function formatAttributes(attributes) {
   let formattedAttributes = '';
 
   for (let attribute in attributes) {
-    formattedAttributes += `${attribute}="${attributes[attribute]}" `;
+    if ({}.hasOwnProperty.call(attributes, attribute)) {
+      formattedAttributes += `${attribute}="${attributes[attribute]}" `;
+    }
   }
 
   return formattedAttributes.trim();
 }
 
-function withProps() {
-  const STRING_PARTS = arguments[0];
-  const PROPS = [].slice.call(arguments, 1).shift();
+function withProps(strParts, props) {
+  const [openTag, closeTag] = strParts;
 
-  let htmlTag = STRING_PARTS.reduce(function (tag, part) {
-    return tag + formatAttributes(PROPS) + part;
-  });
-
-  return htmlTag
+  return `${openTag}${formatAttributes(props)}${closeTag}`;
 }
 
 const IMG = withProps`<img ${PROPS}>`;
