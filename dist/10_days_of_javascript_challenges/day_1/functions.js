@@ -1,0 +1,20 @@
+"use strict";
+
+/*
+  Implement a function named factorial that has one parameter: an integer, n.
+  It must return the value of n! (i.e., n factorial).
+
+  Sample Input: 4
+  Sample Output: 24
+*/
+
+function factorial(n) {
+  if (n <= 1) {
+    return 1;
+  }
+
+  return n * factorial(n - 1);
+}
+
+process.stdout.write(factorial(4) + "\n");
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi4uLy4uLy4uL3NyYy8xMF9kYXlzX29mX2phdmFzY3JpcHRfY2hhbGxlbmdlcy9kYXlfMS9mdW5jdGlvbnMuZXM2Il0sIm5hbWVzIjpbImZhY3RvcmlhbCIsIm4iLCJwcm9jZXNzIiwic3Rkb3V0Iiwid3JpdGUiXSwibWFwcGluZ3MiOiI7O0FBQUE7Ozs7Ozs7O0FBUUEsU0FBU0EsU0FBVCxDQUFtQkMsQ0FBbkIsRUFBc0I7QUFDcEIsTUFBSUEsS0FBSyxDQUFULEVBQVk7QUFDVixXQUFPLENBQVA7QUFDRDs7QUFFRCxTQUFPQSxJQUFJRCxVQUFVQyxJQUFJLENBQWQsQ0FBWDtBQUNEOztBQUVEQyxRQUFRQyxNQUFSLENBQWVDLEtBQWYsQ0FBd0JKLFVBQVUsQ0FBVixDQUF4QiIsImZpbGUiOiJmdW5jdGlvbnMuanMiLCJzb3VyY2VzQ29udGVudCI6WyIvKlxuICBJbXBsZW1lbnQgYSBmdW5jdGlvbiBuYW1lZMKgZmFjdG9yaWFswqB0aGF0IGhhcyBvbmUgcGFyYW1ldGVyOiBhbiBpbnRlZ2VyLCBuLlxuICBJdCBtdXN0IHJldHVybiB0aGUgdmFsdWUgb2bCoG4hwqAoaS5lLizCoG4gZmFjdG9yaWFsKS5cblxuICBTYW1wbGUgSW5wdXQ6IDRcbiAgU2FtcGxlIE91dHB1dDogMjRcbiovXG5cbmZ1bmN0aW9uIGZhY3RvcmlhbChuKSB7XG4gIGlmIChuIDw9IDEpIHtcbiAgICByZXR1cm4gMTtcbiAgfVxuXG4gIHJldHVybiBuICogZmFjdG9yaWFsKG4gLSAxKTtcbn1cblxucHJvY2Vzcy5zdGRvdXQud3JpdGUoYCR7ZmFjdG9yaWFsKDQpfVxcbmApO1xuIl19

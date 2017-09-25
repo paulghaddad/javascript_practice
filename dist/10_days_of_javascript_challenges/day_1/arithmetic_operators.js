@@ -1,0 +1,32 @@
+"use strict";
+
+/*
+  Calculate the area of a rectangle.
+
+  length: The length of the rectangle.
+  width: The width of the rectangle.
+
+  Return a number denoting the rectangle's area.
+*/
+
+function getArea(length, width) {
+  return length * width;
+}
+
+process.stdout.write(getArea(3, 4.5) + "\n");
+
+/*
+  Calculate the perimeter of a rectangle.
+
+  length: The length of the rectangle.
+  width: The width of the rectangle.
+
+  Return a number denoting the perimeter of a rectangle.
+*/
+
+function getPerimeter(length, width) {
+  return 2 * (length + width);
+}
+
+process.stdout.write(getPerimeter(3, 4.5) + "\n");
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi4uLy4uLy4uL3NyYy8xMF9kYXlzX29mX2phdmFzY3JpcHRfY2hhbGxlbmdlcy9kYXlfMS9hcml0aG1ldGljX29wZXJhdG9ycy5lczYiXSwibmFtZXMiOlsiZ2V0QXJlYSIsImxlbmd0aCIsIndpZHRoIiwicHJvY2VzcyIsInN0ZG91dCIsIndyaXRlIiwiZ2V0UGVyaW1ldGVyIl0sIm1hcHBpbmdzIjoiOztBQUFBOzs7Ozs7Ozs7QUFTQSxTQUFTQSxPQUFULENBQWlCQyxNQUFqQixFQUF5QkMsS0FBekIsRUFBZ0M7QUFDOUIsU0FBT0QsU0FBU0MsS0FBaEI7QUFDRDs7QUFFREMsUUFBUUMsTUFBUixDQUFlQyxLQUFmLENBQXdCTCxRQUFRLENBQVIsRUFBVyxHQUFYLENBQXhCOztBQUVBOzs7Ozs7Ozs7QUFTQSxTQUFTTSxZQUFULENBQXNCTCxNQUF0QixFQUE4QkMsS0FBOUIsRUFBcUM7QUFDbkMsU0FBTyxLQUFLRCxTQUFTQyxLQUFkLENBQVA7QUFDRDs7QUFFREMsUUFBUUMsTUFBUixDQUFlQyxLQUFmLENBQXdCQyxhQUFhLENBQWIsRUFBZ0IsR0FBaEIsQ0FBeEIiLCJmaWxlIjoiYXJpdGhtZXRpY19vcGVyYXRvcnMuanMiLCJzb3VyY2VzQ29udGVudCI6WyIvKlxuICBDYWxjdWxhdGUgdGhlIGFyZWEgb2YgYSByZWN0YW5nbGUuXG5cbiAgbGVuZ3RoOiBUaGUgbGVuZ3RoIG9mIHRoZSByZWN0YW5nbGUuXG4gIHdpZHRoOiBUaGUgd2lkdGggb2YgdGhlIHJlY3RhbmdsZS5cblxuICBSZXR1cm4gYSBudW1iZXIgZGVub3RpbmcgdGhlIHJlY3RhbmdsZSdzIGFyZWEuXG4qL1xuXG5mdW5jdGlvbiBnZXRBcmVhKGxlbmd0aCwgd2lkdGgpIHtcbiAgcmV0dXJuIGxlbmd0aCAqIHdpZHRoO1xufVxuXG5wcm9jZXNzLnN0ZG91dC53cml0ZShgJHtnZXRBcmVhKDMsIDQuNSl9XFxuYCk7XG5cbi8qXG4gIENhbGN1bGF0ZSB0aGUgcGVyaW1ldGVyIG9mIGEgcmVjdGFuZ2xlLlxuXG4gIGxlbmd0aDogVGhlIGxlbmd0aCBvZiB0aGUgcmVjdGFuZ2xlLlxuICB3aWR0aDogVGhlIHdpZHRoIG9mIHRoZSByZWN0YW5nbGUuXG5cbiAgUmV0dXJuIGEgbnVtYmVyIGRlbm90aW5nIHRoZSBwZXJpbWV0ZXIgb2YgYSByZWN0YW5nbGUuXG4qL1xuXG5mdW5jdGlvbiBnZXRQZXJpbWV0ZXIobGVuZ3RoLCB3aWR0aCkge1xuICByZXR1cm4gMiAqIChsZW5ndGggKyB3aWR0aCk7XG59XG5cbnByb2Nlc3Muc3Rkb3V0LndyaXRlKGAke2dldFBlcmltZXRlcigzLCA0LjUpfVxcbmApO1xuIl19
