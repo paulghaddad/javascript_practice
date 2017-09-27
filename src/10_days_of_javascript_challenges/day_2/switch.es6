@@ -31,7 +31,6 @@ function getLetter(s) {
   return letter;
 }
 
-
 process.stdout.write("Input: adfgt\n");
 
 process.stdout.write(`Output: ${getLetter('adfgt')}\n`);
