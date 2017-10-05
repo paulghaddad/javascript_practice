@@ -1,0 +1,25 @@
+'use strict';
+
+/*
+  Complete the reverseString function; it has one parameter, s. You must perform the
+  following actions:
+    1. Try to reverse string s using the split, reverse, and join methods.
+    2. If an exception is thrown, catch it and print the contents of the exception's
+       message on a new line.
+    3. Print s on a new line. If no exception was thrown, then this should be the reversed
+       string; if an exception was thrown, this should be the original string.
+*/
+
+function reverseString(s) {
+  try {
+    var reversedNumber = String(s.split('').reverse().join(''));
+    console.log(reversedNumber);
+  } catch (e) {
+    console.log(e.message);
+    console.log(s);
+  }
+}
+
+process.stdout.write(reverseString('1234') + '\n');
+process.stdout.write(reverseString(Number(1234)) + '\n');
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi4uLy4uLy4uL3NyYy8xMF9kYXlzX29mX2phdmFzY3JpcHRfY2hhbGxlbmdlcy9kYXlfMy90cnlfY2F0Y2hfZmluYWxseS5lczYiXSwibmFtZXMiOlsicmV2ZXJzZVN0cmluZyIsInMiLCJyZXZlcnNlZE51bWJlciIsIlN0cmluZyIsInNwbGl0IiwicmV2ZXJzZSIsImpvaW4iLCJjb25zb2xlIiwibG9nIiwiZSIsIm1lc3NhZ2UiLCJwcm9jZXNzIiwic3Rkb3V0Iiwid3JpdGUiLCJOdW1iZXIiXSwibWFwcGluZ3MiOiI7O0FBQUE7Ozs7Ozs7Ozs7QUFVQSxTQUFTQSxhQUFULENBQXVCQyxDQUF2QixFQUEwQjtBQUN4QixNQUFJO0FBQ0YsUUFBSUMsaUJBQWlCQyxPQUFPRixFQUFFRyxLQUFGLENBQVEsRUFBUixFQUFZQyxPQUFaLEdBQXNCQyxJQUF0QixDQUEyQixFQUEzQixDQUFQLENBQXJCO0FBQ0FDLFlBQVFDLEdBQVIsQ0FBWU4sY0FBWjtBQUNELEdBSEQsQ0FHRSxPQUFNTyxDQUFOLEVBQVM7QUFDVEYsWUFBUUMsR0FBUixDQUFZQyxFQUFFQyxPQUFkO0FBQ0FILFlBQVFDLEdBQVIsQ0FBWVAsQ0FBWjtBQUNEO0FBQ0Y7O0FBRURVLFFBQVFDLE1BQVIsQ0FBZUMsS0FBZixDQUF3QmIsY0FBYyxNQUFkLENBQXhCO0FBQ0FXLFFBQVFDLE1BQVIsQ0FBZUMsS0FBZixDQUF3QmIsY0FBY2MsT0FBTyxJQUFQLENBQWQsQ0FBeEIiLCJmaWxlIjoidHJ5X2NhdGNoX2ZpbmFsbHkuanMiLCJzb3VyY2VzQ29udGVudCI6WyIvKlxuICBDb21wbGV0ZSB0aGXCoHJldmVyc2VTdHJpbmfCoGZ1bmN0aW9uOyBpdCBoYXMgb25lIHBhcmFtZXRlcizCoHMuIFlvdSBtdXN0IHBlcmZvcm0gdGhlXG4gIGZvbGxvd2luZyBhY3Rpb25zOlxuICAgIDEuIFRyecKgdG8gcmV2ZXJzZSBzdHJpbmfCoHPCoHVzaW5nIHRoZcKgc3BsaXQswqByZXZlcnNlLCBhbmTCoGpvaW7CoG1ldGhvZHMuXG4gICAgMi4gSWYgYW4gZXhjZXB0aW9uIGlzIHRocm93bizCoGNhdGNowqBpdCBhbmQgcHJpbnQgdGhlIGNvbnRlbnRzIG9mIHRoZSBleGNlcHRpb24nc1xuICAgICAgIG1lc3NhZ2XCoG9uIGEgbmV3IGxpbmUuXG4gICAgMy4gUHJpbnTCoHPCoG9uIGEgbmV3IGxpbmUuIElmIG5vIGV4Y2VwdGlvbiB3YXMgdGhyb3duLCB0aGVuIHRoaXMgc2hvdWxkIGJlIHRoZSByZXZlcnNlZFxuICAgICAgIHN0cmluZzsgaWYgYW4gZXhjZXB0aW9uIHdhcyB0aHJvd24sIHRoaXMgc2hvdWxkIGJlIHRoZSBvcmlnaW5hbCBzdHJpbmcuXG4qL1xuXG5mdW5jdGlvbiByZXZlcnNlU3RyaW5nKHMpIHtcbiAgdHJ5IHtcbiAgICBsZXQgcmV2ZXJzZWROdW1iZXIgPSBTdHJpbmcocy5zcGxpdCgnJykucmV2ZXJzZSgpLmpvaW4oJycpKTtcbiAgICBjb25zb2xlLmxvZyhyZXZlcnNlZE51bWJlcik7XG4gIH0gY2F0Y2goZSkge1xuICAgIGNvbnNvbGUubG9nKGUubWVzc2FnZSk7XG4gICAgY29uc29sZS5sb2cocyk7XG4gIH1cbn1cblxucHJvY2Vzcy5zdGRvdXQud3JpdGUoYCR7cmV2ZXJzZVN0cmluZygnMTIzNCcpfVxcbmApO1xucHJvY2Vzcy5zdGRvdXQud3JpdGUoYCR7cmV2ZXJzZVN0cmluZyhOdW1iZXIoMTIzNCkpfVxcbmApO1xuIl19
